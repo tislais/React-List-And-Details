@@ -9,7 +9,6 @@ const Character = ({ name, affiliation, allies, enemies, photoUrl }) => (
       <p>{affiliation}</p>
       <p>{allies}</p>
       <p>{enemies}</p>
-      <p>{photoUrl}</p>
     </figcaption>
   </figure>
 );
@@ -17,8 +16,8 @@ const Character = ({ name, affiliation, allies, enemies, photoUrl }) => (
 Character.propTypes = {
   name: PropTypes.string.isRequired,
   affiliation: PropTypes.string.isRequired,
-  allies: PropTypes.string.isRequired,
-  enemies: PropTypes.string.isRequired,
+  allies: PropTypes.array,
+  enemies: PropTypes.array,
   photoUrl: PropTypes.string.isRequired,
 };
 
