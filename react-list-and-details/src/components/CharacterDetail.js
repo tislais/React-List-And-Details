@@ -21,7 +21,16 @@ export default class CharacterDetail extends Component {
     const { character } = this.state;
 
     return (
-      <h1>details of {character.name}</h1>
+      <>
+        <h1 className="text-4xl">{character.name}</h1>
+        <img src={character.photoUrl} alt={character.name} />
+        <p>Gender: {character.gender}</p>
+        <p>Hair Color: {character.hair}</p>
+        <p>Position: {character.position}</p>
+        <p>Affiliation: {character.affiliation}</p>
+        <p>Allies: {character.allies}</p>
+        <p>Enemies: {character.enemies}</p>
+      </>
     )
   }
 }

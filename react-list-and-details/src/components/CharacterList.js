@@ -5,13 +5,13 @@ import Character from './Character';
 const CharacterList = ({ characters }) => {
   
   const characterElements = characters.map((character) => (
-    <li key={character.id}>
+    <li key={character._id}>
       <Character
         name={character.name}
-        affilition={character.affilition}
         allies={character.allies}
         enemies={character.enemies}
         photoUrl={character.photoUrl}
+        id={character._id}
       />
     </li>
   ))

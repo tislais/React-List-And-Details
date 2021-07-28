@@ -12,7 +12,7 @@ function App() {
       <Switch>
 
         <Route path="/" exact={true} 
-        render={routerProps => (
+          render={routerProps => (
             <TlabCharacters />
           )} />
 
