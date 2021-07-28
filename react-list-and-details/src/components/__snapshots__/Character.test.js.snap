@@ -3,12 +3,21 @@
 exports[`Character component renders Character 1`] = `
 <DocumentFragment>
   <figure>
-    <img />
+    <img
+      alt="46th Earth King"
+      src="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441"
+    />
     <figcaption>
+      <p>
+        46th Earth King
+      </p>
       <p />
-      <p />
-      <p />
-      <p />
+      <p>
+        Royal Earthbender Guards
+      </p>
+      <p>
+        Chin
+      </p>
     </figcaption>
   </figure>
 </DocumentFragment>
