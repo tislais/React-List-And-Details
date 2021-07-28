@@ -18,7 +18,7 @@ Character.propTypes = {
   affiliation: PropTypes.string.isRequired,
   allies: PropTypes.array,
   enemies: PropTypes.array,
-  photoUrl: PropTypes.string.isRequired,
+  photoUrl: PropTypes.string.isRequired
 };
 
 export default Character;
