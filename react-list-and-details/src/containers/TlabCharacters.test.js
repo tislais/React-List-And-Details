@@ -8,7 +8,8 @@ describe('TlabCharacters container', () => {
 
     screen.getByText('Loading...');
 
-    const ul = screen.getByRole('list');
+    const ul = await screen.findByRole('list');
+    
     expect(ul).not.toBeEmptyDOMElement();
   });
 });

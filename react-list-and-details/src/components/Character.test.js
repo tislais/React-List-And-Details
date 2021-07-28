@@ -6,7 +6,6 @@ describe('Character component', () => {
   it('renders Character', () => {
     const { asFragment } = render(<Character
       name="46th Earth King"
-      affilition=" Earth Kingdom Earth Kingdom Royal Family"
       allies={["Royal Earthbender Guards"]}
       enemies={["Chin"]}
       photoUrl="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441" />);

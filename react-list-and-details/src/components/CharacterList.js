@@ -5,7 +5,12 @@ import Character from './Character';
 const CharacterList = ({ characters }) => {
   
   const characterElements = characters.map((character) => (
-    <li key={character._id}>
+
+    <li key={character._id} 
+      className="p-5 bg-white rounded shadow-md 
+      hover:scale-105 transition duration-300 ease-in-out
+      cursor-pointer">
+
       <Character
         name={character.name}
         allies={character.allies}
@@ -13,10 +18,12 @@ const CharacterList = ({ characters }) => {
         photoUrl={character.photoUrl}
         id={character._id}
       />
+
     </li>
   ))
   return (
-    <ul>
+    <ul 
+      className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 p-4 gap-4">
       {characterElements}
     </ul>
   )
