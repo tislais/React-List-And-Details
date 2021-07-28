@@ -21,6 +21,6 @@ export default class TlabCharacters extends Component {
 
     if (loading) return <h1>Loading...</h1>
 
-    return <CharacterList characters={characters} />;
+    return < CharacterList characters={characters} />;
   }
 }
